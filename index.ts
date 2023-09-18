@@ -8,7 +8,7 @@ const cloudInitData = fs.readFileSync("cloudInitConfig.yaml", "utf-8");
 const server = new hcloud.Server("appwrite-server", {
     image: "ubuntu-22.04",
     serverType: "cpx11",
-    // location germany-fra1
+    // location germany-nbg1
     location: "nbg1",
     userData: cloudInitData 
 });
